@@ -1,0 +1,155 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+**,**:before,**:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+/*Header styles start*/
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.wrapper{
+	max-width: 1060px;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+
+.header__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 56px;
+	
+}
+
+.header__list {
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.header__item {
+	margin-right: 82px;
+}
+
+.header__item:last-child {
+	margin-right: 0;
+}
+
+.header__link{
+	color: white;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+	opacity: .75;
+}
+
+/*Header styles end*/
+
+/*Main styles start */
+
+.intro {
+	min-height: 100vh;
+	background: url(../img/intro-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding-top: 263px;
+}
+
+.intro__title {
+	font-weight: 500;
+	font-size: 50px;
+	line-height: 60px;
+	color: #FFFFFF;
+	max-width: 620px;
+	margin-bottom: 22px;
+}
+
+.intro__subtitle {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	max-width: 546px;
+	margin-bottom: 60px	;
+}
+
+.search-form__info {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.search-form__field {
+	width: 297px;
+	margin-right: 60px;
+	background: transparent url(../img/circle-logo.svg) no-repeat left 6px;
+	background-size: 20px;
+	padding: 0 0 22px 43px;
+	border-bottom:2px solid #BFC0C5;
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.search-form__field::placeholder {
+	color: white;
+}
+
+.search-form__submit {
+	padding: 15px 40px;
+	text-transform:uppercase ;
+	background: #1B7DFF;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+
+.search-form__submit:focus, .search-form__submit:active, .search-form__submit:hover {
+	background: #075bca;
+}

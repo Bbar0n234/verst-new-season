@@ -19,4 +19,4 @@
 	burgerMenuCloseEl[0].addEventListener('click', () => {
 		menu[0].classList.remove('header__menu_active');
 	})
-} ())
+} ())	
